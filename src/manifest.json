@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Bot Chrome Network",
+    "description": "Ish Bot Extension to Influence Chrome's Network",
+    "version": "1.0",
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "background": {
+        "service_worker": "./background.js"
+    },
+    "content_scripts": [
+        {
+            "world": "ISOLATED",
+            "all_frames": true,
+            "matches": [
+                "<all_urls>"
+            ],
+            "run_at": "document_start",
+            "match_about_blank": true,
+            "js": [
+                "isolated.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}

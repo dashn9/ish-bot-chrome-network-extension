@@ -1,0 +1,22 @@
+{
+  "name": "ish-bot-chrome-network-extension",
+  "version": "1.0.0",
+  "description": "Ish Bot Extension to Influence Chrome's Network",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ishogbon/ish-bot-chrome-network-extension.git"
+  },
+  "author": "Daniel Shogbon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ishogbon/ish-bot-chrome-network-extension/issues"
+  },
+  "homepage": "https://github.com/Ishogbon/ish-bot-chrome-network-extension#readme",
+  "dependencies": {
+    "@types/chrome": "^0.0.271"
+  }
+}
