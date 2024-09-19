@@ -41,11 +41,15 @@ function removeAllowTabRule(tabId) {
 }
 
 chrome.runtime.onInstalled.addListener(() => {
-    addBlockMainFrameRule();
+    setTimeout(() => {
+        addBlockMainFrameRule();
+    }, 8000);
 });
 
 chrome.runtime.onStartup.addListener(() => {
-    addBlockMainFrameRule();
+    setTimeout(() => {
+        addBlockMainFrameRule();
+    }, 8000);
 })
 
 chrome.tabs.onCreated.addListener((tab) => {

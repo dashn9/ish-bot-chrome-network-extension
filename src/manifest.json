@@ -4,7 +4,8 @@
     "description": "Ish Bot Extension to Influence Chrome's Network",
     "version": "1.0",
     "permissions": [
-        "declarativeNetRequest"
+        "declarativeNetRequest",
+        "tabs"
     ],
     "background": {
         "service_worker": "./background.js"
