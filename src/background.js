@@ -51,7 +51,7 @@ chrome.runtime.onStartup.addListener(() => {
 chrome.tabs.onCreated.addListener((tab) => {
     setTimeout(() => {
         createAllowTabRule(tab.id);
-    }, 3000)
+    }, 1000)
 });
 
 chrome.tabs.onRemoved.addListener((tabId) => {
